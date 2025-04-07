@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Sliding Webpage",
+  "version": "1.0",
+  "description": "Slides in a webpage from the right when clicked.",
+  "permissions": ["activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Open Sliding Page"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["tree.html", "popup.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
