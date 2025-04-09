@@ -1,3 +1,24 @@
+#newstitch-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+#newstitch-button:hover {
+    transform: scale(1.05);
+}
+
 #sliding-popup-container {
     position: fixed;
     top: 0;
